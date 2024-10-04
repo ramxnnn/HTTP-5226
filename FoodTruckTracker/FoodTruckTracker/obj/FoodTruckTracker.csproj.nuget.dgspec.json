@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj": {}
   },
   "projects": {
-    "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
         "projectName": "FoodTruckTracker",
-        "projectPath": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,19 +58,17 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             }
           },
           "imports": [

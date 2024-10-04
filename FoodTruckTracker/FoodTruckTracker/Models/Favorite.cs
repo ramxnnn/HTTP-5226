@@ -1,20 +1,18 @@
-﻿namespace FoodTruckTracker.Models
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
+
+namespace FoodTruckTracker.Models
 {
     public class Favorite
     {
-        public int UserId { get; set; }
+        [Key] // Marks this property as the primary key
+        public int FavoriteId { get; set; }
 
-        // Initialize User with default values for required properties
-        public required User User { get; set; } = new()
-        {
-            UserName = "Default User", // Provide default values for required properties
-            Email = "default@example.com"
-        };
+        public required string UserId { get; set; } // Assuming this is the ID of the User
+        public required IdentityUser User { get; set; } = new IdentityUser(); // Initialize with a new instance
 
-        public int FoodTruckId { get; set; }
-
-        // Initialize FoodTruck with default values for required properties
-        public required FoodTruck FoodTruck { get; set; } = new()
+        public required int FoodTruckId { get; set; } // Foreign key to FoodTruck
+        public required FoodTruck FoodTruck { get; set; } = new FoodTruck // Initialize FoodTruck with default values
         {
             Name = "Default Food Truck",
             Description = "Default Description",

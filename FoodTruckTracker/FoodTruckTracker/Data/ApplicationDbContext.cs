@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using FoodTruckTracker.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using FoodTruckTracker.Models;  // Add your models namespace
 
 namespace FoodTruckTracker.Data
 {
@@ -15,14 +15,16 @@ namespace FoodTruckTracker.Data
         public DbSet<Location> Locations { get; set; }
         public DbSet<MenuItem> MenuItems { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
-        public DbSet<User> CustomUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder); // Call the base method for Identity setup
+            base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Favorite>()
-                .HasKey(f => new { f.UserId, f.FoodTruckId });
+            modelBuilder.Entity<MenuItem>()
+                .Property(m => m.Price)
+                .HasColumnType("decimal(18,2)"); // Specify precision and scale
+
+            // Continue with other configurations
         }
     }
 }

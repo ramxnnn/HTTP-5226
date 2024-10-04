@@ -24,15 +24,24 @@ namespace FoodTruckTracker.Data.Migrations
 
             modelBuilder.Entity("FoodTruckTracker.Models.Favorite", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("FavoriteId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FavoriteId"));
 
                     b.Property<int>("FoodTruckId")
                         .HasColumnType("int");
 
-                    b.HasKey("UserId", "FoodTruckId");
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("FavoriteId");
 
                     b.HasIndex("FoodTruckId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Favorites");
                 });
@@ -110,18 +119,10 @@ namespace FoodTruckTracker.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MenuItemId"));
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("FoodTruckId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhotoUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -133,27 +134,6 @@ namespace FoodTruckTracker.Data.Migrations
                     b.HasIndex("FoodTruckId");
 
                     b.ToTable("MenuItems");
-                });
-
-            modelBuilder.Entity("FoodTruckTracker.Models.User", b =>
-                {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("CustomUsers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -366,8 +346,8 @@ namespace FoodTruckTracker.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("FoodTruckTracker.Models.User", "User")
-                        .WithMany("Favorites")
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -457,11 +437,6 @@ namespace FoodTruckTracker.Data.Migrations
                     b.Navigation("Locations");
 
                     b.Navigation("MenuItems");
-                });
-
-            modelBuilder.Entity("FoodTruckTracker.Models.User", b =>
-                {
-                    b.Navigation("Favorites");
                 });
 #pragma warning restore 612, 618
         }

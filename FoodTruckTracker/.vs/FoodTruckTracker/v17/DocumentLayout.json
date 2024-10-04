@@ -1,122 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|d:\\humber courses\\backend2\\http-5226\\foodtrucktracker\\foodtrucktracker\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|d:\\humber courses\\backend2\\http-5226\\foodtrucktracker\\foodtrucktracker\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|d:\\humber courses\\backend2\\http-5226\\foodtrucktracker\\foodtrucktracker\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|d:\\humber courses\\backend2\\http-5226\\foodtrucktracker\\foodtrucktracker\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|d:\\humber courses\\backend2\\http-5226\\foodtrucktracker\\foodtrucktracker\\models\\foodtruck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\models\\foodtruck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|d:\\humber courses\\backend2\\http-5226\\foodtrucktracker\\foodtrucktracker\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D457BA-43DF-4245-8180-9CAC40AEA309}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T18:31:13.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\User.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Models\\User.cs",
-              "ToolTip": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\User.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Models\\User.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAywAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T18:30:57.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\MenuItem.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Models\\MenuItem.cs",
-              "ToolTip": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\MenuItem.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Models\\MenuItem.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T18:30:44.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Location.cs",
-              "DocumentMoniker": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\Location.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Models\\Location.cs",
-              "ToolTip": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\Location.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Models\\Location.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwBUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T18:30:30.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FoodTruck.cs",
-              "DocumentMoniker": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\FoodTruck.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Models\\FoodTruck.cs",
-              "ToolTip": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\FoodTruck.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Models\\FoodTruck.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAywA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T18:30:14.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Favorite.cs",
-              "DocumentMoniker": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\Favorite.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Models\\Favorite.cs",
-              "ToolTip": "D:\\Humber Courses\\Backend2\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\Favorite.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Models\\Favorite.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvxoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T18:29:20.116Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

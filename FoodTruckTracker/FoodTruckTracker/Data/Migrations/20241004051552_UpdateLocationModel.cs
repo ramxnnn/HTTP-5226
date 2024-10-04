@@ -5,25 +5,11 @@
 namespace FoodTruckTracker.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class UpdateLocationModel : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "CustomUsers",
-                columns: table => new
-                {
-                    UserId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CustomUsers", x => x.UserId);
-                });
-
             migrationBuilder.CreateTable(
                 name: "FoodTrucks",
                 columns: table => new
@@ -46,17 +32,19 @@ namespace FoodTruckTracker.Data.Migrations
                 name: "Favorites",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "int", nullable: false),
+                    FavoriteId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FoodTruckId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Favorites", x => new { x.UserId, x.FoodTruckId });
+                    table.PrimaryKey("PK_Favorites", x => x.FavoriteId);
                     table.ForeignKey(
-                        name: "FK_Favorites_CustomUsers_UserId",
+                        name: "FK_Favorites_AspNetUsers_UserId",
                         column: x => x.UserId,
-                        principalTable: "CustomUsers",
-                        principalColumn: "UserId",
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Favorites_FoodTrucks_FoodTruckId",
@@ -117,6 +105,11 @@ namespace FoodTruckTracker.Data.Migrations
                 column: "FoodTruckId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Favorites_UserId",
+                table: "Favorites",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Locations_FoodTruckId",
                 table: "Locations",
                 column: "FoodTruckId");
@@ -138,9 +131,6 @@ namespace FoodTruckTracker.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "MenuItems");
-
-            migrationBuilder.DropTable(
-                name: "CustomUsers");
 
             migrationBuilder.DropTable(
                 name: "FoodTrucks");
