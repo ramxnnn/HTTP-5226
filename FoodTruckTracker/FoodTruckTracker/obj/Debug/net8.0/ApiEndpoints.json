@@ -1,85 +1,27 @@
 [
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FavoriteController",
-    "Method": "Index",
-    "RelativePath": "api/Favorite",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.FavoriteController",
-    "Method": "Create",
-    "RelativePath": "api/Favorite",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "favorite",
-        "Type": "FoodTruckTracker.Models.Favorite",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.FavoriteController",
-    "Method": "GetById",
-    "RelativePath": "api/Favorite/{userId}/{foodTruckId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "foodTruckId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.FavoriteController",
-    "Method": "DeleteConfirmed",
-    "RelativePath": "api/Favorite/{userId}/{foodTruckId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "foodTruckId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTruckController",
-    "Method": "Index",
+    "ContainingType": "FoodTruckController",
+    "Method": "GetFoodTrucks",
     "RelativePath": "api/FoodTruck",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FoodTruck, FoodTruckTracker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTruckController",
-    "Method": "Create",
+    "ContainingType": "FoodTruckController",
+    "Method": "PostFoodTruck",
     "RelativePath": "api/FoodTruck",
     "HttpMethod": "POST",
     "IsController": true,
@@ -87,15 +29,25 @@
     "Parameters": [
       {
         "Name": "foodTruck",
-        "Type": "FoodTruckTracker.Models.FoodTruck",
+        "Type": "FoodTruck",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "FoodTruck",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTruckController",
-    "Method": "GetById",
+    "ContainingType": "FoodTruckController",
+    "Method": "GetFoodTruck",
     "RelativePath": "api/FoodTruck/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -107,11 +59,21 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "FoodTruck",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTruckController",
-    "Method": "Edit",
+    "ContainingType": "FoodTruckController",
+    "Method": "PutFoodTruck",
     "RelativePath": "api/FoodTruck/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -124,174 +86,16 @@
       },
       {
         "Name": "foodTruck",
-        "Type": "FoodTruckTracker.Models.FoodTruck",
+        "Type": "FoodTruck",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTruckController",
-    "Method": "DeleteConfirmed",
+    "ContainingType": "FoodTruckController",
+    "Method": "DeleteFoodTruck",
     "RelativePath": "api/FoodTruck/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationController",
-    "Method": "Index",
-    "RelativePath": "api/Location",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationController",
-    "Method": "Create",
-    "RelativePath": "api/Location",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "location",
-        "Type": "FoodTruckTracker.Models.Location",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationController",
-    "Method": "GetById",
-    "RelativePath": "api/Location/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationController",
-    "Method": "Edit",
-    "RelativePath": "api/Location/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "location",
-        "Type": "FoodTruckTracker.Models.Location",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationController",
-    "Method": "DeleteConfirmed",
-    "RelativePath": "api/Location/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemController",
-    "Method": "Index",
-    "RelativePath": "api/MenuItem",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemController",
-    "Method": "Create",
-    "RelativePath": "api/MenuItem",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "menuItem",
-        "Type": "FoodTruckTracker.Models.MenuItem",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemController",
-    "Method": "GetById",
-    "RelativePath": "api/MenuItem/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemController",
-    "Method": "Edit",
-    "RelativePath": "api/MenuItem/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "menuItem",
-        "Type": "FoodTruckTracker.Models.MenuItem",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemController",
-    "Method": "DeleteConfirmed",
-    "RelativePath": "api/MenuItem/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

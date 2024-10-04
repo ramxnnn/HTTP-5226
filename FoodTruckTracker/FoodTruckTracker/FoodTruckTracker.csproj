@@ -1,10 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-FoodTruckTracker-a234989e-42d7-4207-a9ad-19e952337638</UserSecretsId>
+    <UserSecretsId>aspnet-FoodTruckTracker-0e6e134b-5523-4ddc-9b84-2c6d6e05e2b6</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

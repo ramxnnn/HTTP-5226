@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTruckTracker", "FoodTruckTracker\FoodTruckTracker.csproj", "{2294C4F6-E987-42A0-AEB3-81CF08BAAB01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTruckTracker", "FoodTruckTracker\FoodTruckTracker.csproj", "{885DE513-0BBA-4F73-A9EE-FC4699950633}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2294C4F6-E987-42A0-AEB3-81CF08BAAB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2294C4F6-E987-42A0-AEB3-81CF08BAAB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2294C4F6-E987-42A0-AEB3-81CF08BAAB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2294C4F6-E987-42A0-AEB3-81CF08BAAB01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885DE513-0BBA-4F73-A9EE-FC4699950633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885DE513-0BBA-4F73-A9EE-FC4699950633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885DE513-0BBA-4F73-A9EE-FC4699950633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885DE513-0BBA-4F73-A9EE-FC4699950633}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5A2C3A71-DC56-46F7-91E3-D2F94F05CB91}
+		SolutionGuid = {D8C34FF3-FD97-4C52-ABE6-9EB38F9E6717}
 	EndGlobalSection
 EndGlobal

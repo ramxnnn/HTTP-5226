@@ -1,12 +1,84 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{885DE513-0BBA-4F73-A9EE-FC4699950633}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{885DE513-0BBA-4F73-A9EE-FC4699950633}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{885DE513-0BBA-4F73-A9EE-FC4699950633}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{885DE513-0BBA-4F73-A9EE-FC4699950633}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{885DE513-0BBA-4F73-A9EE-FC4699950633}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{885DE513-0BBA-4F73-A9EE-FC4699950633}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FoodDB/True/SqlTable/dbo.FoodTrucks.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FoodController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Controllers\\FoodController.cs",
+              "RelativeDocumentMoniker": "FoodTruckTracker\\Controllers\\FoodController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Controllers\\FoodController.cs",
+              "RelativeToolTip": "FoodTruckTracker\\Controllers\\FoodController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:27:43.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Program.cs",
+              "RelativeDocumentMoniker": "FoodTruckTracker\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Program.cs",
+              "RelativeToolTip": "FoodTruckTracker\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:24:52.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "FoodTruckTracker\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "FoodTruckTracker\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:24:08.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.FoodTrucks [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/FoodDB/True/SqlTable/dbo.FoodTrucks.sql",
+              "ToolTip": "dbo.FoodTrucks [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-04T20:23:07.51Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

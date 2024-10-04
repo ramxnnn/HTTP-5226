@@ -1,6 +1,4 @@
 using FoodTruckTracker.Data;
-using FoodTruckTracker.Interfaces;
-using FoodTruckTracker.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,19 +10,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+// Update this line to use ApplicationUser instead of IdentityUser
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
 builder.Services.AddControllersWithViews();
 
-// Register your services here
-builder.Services.AddScoped<IFoodTruckService, FoodTruckService>();
-builder.Services.AddScoped<ILocationService, LocationService>();
-builder.Services.AddScoped<IMenuItemService, MenuItemService>();
-builder.Services.AddScoped<IFavoriteService, FavoriteService>();
-
-// Add Swagger services
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// Register Swagger services
+builder.Services.AddSwaggerGen(); // Add this line to enable Swagger
 
 var app = builder.Build();
 
@@ -36,6 +29,7 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios.
     app.UseHsts();
 }
 
@@ -46,8 +40,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-// Enable Swagger and configure Swagger UI
+// Enable middleware to serve generated Swagger as a JSON endpoint
 app.UseSwagger();
+
+// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.)
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Food Truck Tracker API V1");
@@ -57,6 +53,7 @@ app.UseSwaggerUI(c =>
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 app.MapRazorPages();
 
 app.Run();
