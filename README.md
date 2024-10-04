@@ -53,28 +53,31 @@ Swagger UI is integrated into the application for easy testing of API endpoints.
 
 ### Endpoints
 
+### Endpoints
+
 1. **Food Trucks**
-GET /api/foodtrucks - Get all food trucks
-POST /api/foodtrucks - Create a new food truck
-PUT /api/foodtrucks/{id} - Update a food truck
-DELETE /api/foodtrucks/{id} - Delete a food truck
+   - `GET /api/foodtrucks` - Get all food trucks
+   - `POST /api/foodtrucks` - Create a new food truck
+   - `PUT /api/foodtrucks/{id}` - Update a food truck
+   - `DELETE /api/foodtrucks/{id}` - Delete a food truck
 
 2. **Locations**
-GET /api/locations - Get all locations
-POST /api/locations - Create a new location
-PUT /api/locations/{id} - Update a location
-DELETE /api/locations/{id} - Delete a location
+   - `GET /api/locations` - Get all locations
+   - `POST /api/locations` - Create a new location
+   - `PUT /api/locations/{id}` - Update a location
+   - `DELETE /api/locations/{id}` - Delete a location
 
 3. **Menu Items**
-GET /api/menuitems - Get all menu items
-POST /api/menuitems - Create a new menu item
-PUT /api/menuitems/{id} - Update a menu item
-DELETE /api/menuitems/{id} - Delete a menu item
+   - `GET /api/menuitems` - Get all menu items
+   - `POST /api/menuitems` - Create a new menu item
+   - `PUT /api/menuitems/{id}` - Update a menu item
+   - `DELETE /api/menuitems/{id}` - Delete a menu item
 
 4. **Favorites**
-GET /api/favorites - Get all favorites
-POST /api/favorites - Add a favorite
-DELETE /api/favorites/{userId}/{foodTruckId} - Remove a favorite
+   - `GET /api/favorites` - Get all favorites
+   - `POST /api/favorites` - Add a favorite
+   - `DELETE /api/favorites/{userId}/{foodTruckId}` - Remove a favorite
+
 
 ### Contributing
 Contributions are welcome! Please feel free to submit a Pull Request or create an issue if you find any bugs or have suggestions for improvements.
