@@ -1,17 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
-public class FoodTruck
+namespace FoodTruckTracker.Models
 {
-    [Key]
-    public int Id { get; set; }
+    public class FoodTruck
+    {
+        public int Id { get; set; }
 
-    [Required]
-    [StringLength(100)]
-    public string Name { get; set; }
+        [Required]
+        public string Name { get; set; } = null!; // Use null-forgiving operator
 
-    public string Description { get; set; }
+        [Required]
+        public string Description { get; set; } = null!; // Use null-forgiving operator
 
-    // Additional properties
-    public string Cuisine { get; set; }
-    public string Contact { get; set; }
+        [Required]
+        public string Contact { get; set; } = null!; // Use null-forgiving operator
+
+        [JsonIgnore]
+        public ICollection<MenuItem> MenuItems { get; set; } = new List<MenuItem>(); // Initialize to an empty list
+    }
 }

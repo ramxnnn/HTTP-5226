@@ -1,97 +1,101 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FoodTruckTracker.Data;
+using FoodTruckTracker.Models; // Add the missing semicolon
 
-[Route("api/[controller]")]
-[ApiController]
-public class FoodTruckController : ControllerBase
+namespace FoodTruckTracker.Controllers
 {
-    private readonly ApplicationDbContext _context;
-
-    public FoodTruckController(ApplicationDbContext context)
+    [Route("api/[controller]")]
+    [ApiController]
+    public class FoodTruckController : ControllerBase
     {
-        _context = context;
-    }
+        private readonly ApplicationDbContext _context;
 
-    // GET: api/FoodTruck
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<FoodTruck>>> GetFoodTrucks()
-    {
-        return await _context.FoodTrucks.ToListAsync();
-    }
-
-    // GET: api/FoodTruck/5
-    [HttpGet("{id}")]
-    public async Task<ActionResult<FoodTruck>> GetFoodTruck(int id)
-    {
-        var foodTruck = await _context.FoodTrucks.FindAsync(id);
-
-        if (foodTruck == null)
+        public FoodTruckController(ApplicationDbContext context)
         {
-            return NotFound();
+            _context = context;
         }
 
-        return foodTruck;
-    }
-
-    // POST: api/FoodTruck
-    [HttpPost]
-    public async Task<ActionResult<FoodTruck>> PostFoodTruck(FoodTruck foodTruck)
-    {
-        _context.FoodTrucks.Add(foodTruck);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction("GetFoodTruck", new { id = foodTruck.Id }, foodTruck);
-    }
-
-    // PUT: api/FoodTruck/5
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutFoodTruck(int id, FoodTruck foodTruck)
-    {
-        if (id != foodTruck.Id)
+        // GET: api/FoodTruck
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<FoodTruck>>> GetFoodTrucks()
         {
-            return BadRequest();
+            return await _context.FoodTrucks.ToListAsync();
         }
 
-        _context.Entry(foodTruck).State = EntityState.Modified;
+        // GET: api/FoodTruck/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<FoodTruck>> GetFoodTruck(int id)
+        {
+            var foodTruck = await _context.FoodTrucks.FindAsync(id);
 
-        try
-        {
-            await _context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!FoodTruckExists(id))
+            if (foodTruck == null)
             {
                 return NotFound();
             }
-            else
-            {
-                throw;
-            }
+
+            return foodTruck;
         }
 
-        return NoContent();
-    }
-
-    // DELETE: api/FoodTruck/5
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteFoodTruck(int id)
-    {
-        var foodTruck = await _context.FoodTrucks.FindAsync(id);
-        if (foodTruck == null)
+        // POST: api/FoodTruck
+        [HttpPost]
+        public async Task<ActionResult<FoodTruck>> PostFoodTruck(FoodTruck foodTruck)
         {
-            return NotFound();
+            _context.FoodTrucks.Add(foodTruck);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetFoodTruck", new { id = foodTruck.Id }, foodTruck);
         }
 
-        _context.FoodTrucks.Remove(foodTruck);
-        await _context.SaveChangesAsync();
+        // PUT: api/FoodTruck/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutFoodTruck(int id, FoodTruck foodTruck)
+        {
+            if (id != foodTruck.Id)
+            {
+                return BadRequest();
+            }
 
-        return NoContent();
-    }
+            _context.Entry(foodTruck).State = EntityState.Modified;
 
-    private bool FoodTruckExists(int id)
-    {
-        return _context.FoodTrucks.Any(e => e.Id == id);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!FoodTruckExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // DELETE: api/FoodTruck/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteFoodTruck(int id)
+        {
+            var foodTruck = await _context.FoodTrucks.FindAsync(id);
+            if (foodTruck == null)
+            {
+                return NotFound();
+            }
+
+            _context.FoodTrucks.Remove(foodTruck);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool FoodTruckExists(int id)
+        {
+            return _context.FoodTrucks.Any(e => e.Id == id);
+        }
     }
 }

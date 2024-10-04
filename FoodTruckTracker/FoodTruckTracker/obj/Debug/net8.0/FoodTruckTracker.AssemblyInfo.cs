@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodTruckTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0bc3e5f88e0dc80d4f1668e8afb819016137f87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a91d57fe0c304961ad43d9f9626b168fe54cbf1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodTruckTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodTruckTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

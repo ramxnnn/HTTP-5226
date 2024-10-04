@@ -1,11 +1,17 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using FoodTruckTracker.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+namespace FoodTruckTracker.Data
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
 
-    public DbSet<FoodTruck> FoodTrucks { get; set; }
-
-    // Add other DbSets here
+        public DbSet<FoodTruck> FoodTrucks { get; set; }
+        public DbSet<MenuItem> MenuItems { get; set; } // Ensure this is present
+    }
 }
