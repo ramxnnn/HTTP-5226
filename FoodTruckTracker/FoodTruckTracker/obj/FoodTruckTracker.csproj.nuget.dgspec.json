@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj": {}
+    "C:\\Users\\Admin\\Source\\Repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
         "projectName": "FoodTruckTracker",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,6 +75,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
