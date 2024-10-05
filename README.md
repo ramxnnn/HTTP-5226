@@ -2,7 +2,7 @@
 # Food Truck Tracker API
 
 ## Overview
-The **Food Truck Tracker** is a backend application built using ASP.NET Core, designed to help users find food trucks at various locations. This API allows users to manage their favorite food trucks, explore different locations, and browse menu items from various trucks.
+The Local **Food Truck Tracker** System is a backend application built using ASP.NET Core, designed to help users discover food trucks, track their locations, browse menus, and manage their favorites. The system supports real-time updates and provides an efficient way for food truck lovers to explore food trucks in their area.
 
 ## Features
 - **CRUD Operations** for Food Trucks, Locations, Menu Items, and Favorites.
@@ -40,13 +40,13 @@ The **Food Truck Tracker** is a backend application built using ASP.NET Core, de
    Run the following commands to create and apply migrations
 
    ```bash
-   dotnet ef migrations add InitialCreate
-   dotnet ef database update
+   add-migrations 
+   update-database
 
 4. **Running the Application**
    To start the application either use run button in the IDE or use the following command - 
    ```bash
-   dotnet run
+   Use the run function with https or just use dotnet run
    
 ### Api Documentation
 Swagger UI is integrated into the application for easy testing of API endpoints. Access it at https://localhost:7246/swagger.
@@ -56,27 +56,38 @@ Swagger UI is integrated into the application for easy testing of API endpoints.
 ### Endpoints
 
 1. **Food Trucks**
-   - `GET /api/foodtrucks` - Get all food trucks
-   - `POST /api/foodtrucks` - Create a new food truck
-   - `PUT /api/foodtrucks/{id}` - Update a food truck
-   - `DELETE /api/foodtrucks/{id}` - Delete a food truck
+   - `GET /api/foodtrucks` - Get all food trucks.
+   - `GET /api/foodtrucks/{id}` - Retrieve a specific food truck by ID.
+   - `POST /api/foodtrucks` - Create a new food truck.
+   - `PUT /api/foodtrucks/{id}` - Update a food truck.
+   - `DELETE /api/foodtrucks/{id}` - Delete a food truck.
 
 2. **Locations**
-   - `GET /api/locations` - Get all locations
-   - `POST /api/locations` - Create a new location
-   - `PUT /api/locations/{id}` - Update a location
-   - `DELETE /api/locations/{id}` - Delete a location
+   - `GET /api/locations` - Get all locations.
+   - `GET /api/locations/{id}` - Retrieve a specific location by ID.
+   - `POST /api/locations` - Create a new location.
+   - `PUT /api/locations/{id}` - Update a location.
+   - `DELETE /api/locations/{id}` - Delete a location.
 
 3. **Menu Items**
-   - `GET /api/menuitems` - Get all menu items
-   - `POST /api/menuitems` - Create a new menu item
-   - `PUT /api/menuitems/{id}` - Update a menu item
-   - `DELETE /api/menuitems/{id}` - Delete a menu item
+   - `GET /api/menuitems` - Get all menu items.
+   - `GET /api/menuitems/{id}` - Retrieve a specific menu item by ID.
+   - `POST /api/menuitems` - Create a new menu item.
+   - `PUT /api/menuitems/{id}` - Update a menu item.
+   - `DELETE /api/menuitems/{id}` - Delete a menu item.
 
 4. **Favorites**
-   - `GET /api/favorites` - Get all favorites
-   - `POST /api/favorites` - Add a favorite
-   - `DELETE /api/favorites/{userId}/{foodTruckId}` - Remove a favorite
+   - `GET /api/favorites` - Get all favorites.
+   - `GET /api/favorites/{userId}/{foodTruckId}` - Retrieve a specific favorite for a user.
+   - `POST /api/favorites` - Add a favorite.
+   - `DELETE /api/favorites/{userId}/{foodTruckId}` - Remove a favorite.
+
+## Planned Features
+- Food Truck Ratings & Reviews: Allow users to rate and review food trucks.
+- Real-Time Food Truck Location Updates: Integration with a maps API to provide real-time updates for food trucks’ locations.
+- Promotions & Events: Food trucks can offer special deals and promote events in real time.
+- Photo Uploads for Dishes: Users can upload photos of food truck dishes.
+
 
 
 ### Contributing
