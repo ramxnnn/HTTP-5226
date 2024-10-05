@@ -12,11 +12,11 @@ namespace LocalFoodTruckTrackerSystem.Models
 
         public required string Description { get; set; }
 
-        public required string Contact { get; set; }  // Previously the LogoUrl
+        public required string Contact { get; set; } 
 
         // A food truck can be at one location
         [ForeignKey("Location")]
-        public int LocationId { get; set; }  // Foreign key to Location
+        public int LocationId { get; set; }  
 
         public Location? Location { get; set; }  // Navigation property for the Location
 
@@ -37,7 +37,7 @@ namespace LocalFoodTruckTrackerSystem.Models
 
         public required string Contact { get; set; }
 
-        public int LocationId { get; set; }  // Include LocationId in DTO if needed
+        public int LocationId { get; set; }  
     }
 
 }
