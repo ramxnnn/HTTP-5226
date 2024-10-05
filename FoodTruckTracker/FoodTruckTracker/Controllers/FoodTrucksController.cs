@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using FoodTruckTracker.Data;
 using LocalFoodTruckTrackerSystem.Models;
+using CoreEntityFramework.Interfaces;
 
 namespace FoodTruckTracker.Controllers
 {
@@ -14,36 +10,34 @@ namespace FoodTruckTracker.Controllers
     [ApiController]
     public class FoodTrucksController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IFoodTruckService _foodTruckService;
 
-        public FoodTrucksController(ApplicationDbContext context)
+        public FoodTrucksController(IFoodTruckService foodTruckService)
         {
-            _context = context;
+            _foodTruckService = foodTruckService;
         }
 
         // GET: api/FoodTrucks
         [HttpGet]
         public async Task<ActionResult<IEnumerable<FoodTruck>>> GetFoodTrucks()
         {
-            return await _context.FoodTrucks.ToListAsync();
+            var foodTrucks = await _foodTruckService.GetFoodTrucks();
+            return Ok(foodTrucks);
         }
 
-        // GET: api/FoodTrucks/5
+        // GET: api/FoodTrucks/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<FoodTruck>> GetFoodTruck(int id)
         {
-            var foodTruck = await _context.FoodTrucks.FindAsync(id);
-
+            var foodTruck = await _foodTruckService.GetFoodTruck(id);
             if (foodTruck == null)
             {
                 return NotFound();
             }
-
-            return foodTruck;
+            return Ok(foodTruck);
         }
 
-        // PUT: api/FoodTrucks/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/FoodTrucks/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> PutFoodTruck(int id, FoodTruck foodTruck)
         {
@@ -52,57 +46,44 @@ namespace FoodTruckTracker.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(foodTruck).State = EntityState.Modified;
-
-            try
+            if (!await _foodTruckService.FoodTruckExists(id))
             {
-                await _context.SaveChangesAsync();
+                return NotFound();
             }
-            catch (DbUpdateConcurrencyException)
+
+            var updateResult = await _foodTruckService.UpdateFoodTruck(foodTruck);
+            if (!updateResult)
             {
-                if (!FoodTruckExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return StatusCode(500, "Error updating food truck.");
             }
 
             return NoContent();
         }
 
         // POST: api/FoodTrucks
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<FoodTruck>> PostFoodTruck(FoodTruck foodTruck)
         {
-            _context.FoodTrucks.Add(foodTruck);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetFoodTruck", new { id = foodTruck.FoodTruckId }, foodTruck);
+            var createdFoodTruck = await _foodTruckService.AddFoodTruck(foodTruck);
+            return CreatedAtAction(nameof(GetFoodTruck), new { id = createdFoodTruck.FoodTruckId }, createdFoodTruck);
         }
 
-        // DELETE: api/FoodTrucks/5
+        // DELETE: api/FoodTrucks/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteFoodTruck(int id)
         {
-            var foodTruck = await _context.FoodTrucks.FindAsync(id);
-            if (foodTruck == null)
+            if (!await _foodTruckService.FoodTruckExists(id))
             {
                 return NotFound();
             }
 
-            _context.FoodTrucks.Remove(foodTruck);
-            await _context.SaveChangesAsync();
+            var deleteResult = await _foodTruckService.DeleteFoodTruck(id);
+            if (!deleteResult)
+            {
+                return StatusCode(500, "Error deleting food truck.");
+            }
 
             return NoContent();
-        }
-
-        private bool FoodTruckExists(int id)
-        {
-            return _context.FoodTrucks.Any(e => e.FoodTruckId == id);
         }
     }
 }

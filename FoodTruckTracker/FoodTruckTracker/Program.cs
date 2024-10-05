@@ -1,6 +1,11 @@
+using CoreEntityFramework.Interfaces;
+using CoreEntityFramework.Services;
 using FoodTruckTracker.Data;
+using FoodTruckTracker.Services.Interfaces;
+using FoodTruckTracker.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using FoodTruckTracker.Controllers.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +22,14 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IFoodTruckService, FoodTruckService>();
+builder.Services.AddScoped<ILocationService, LocationService>();
+builder.Services.AddScoped<IMenuItemsController, MenuItemService>();
+builder.Services.AddScoped<IUsersController, UserService>();
+
+
+
+
 
 // Register the FoodTruckService
 

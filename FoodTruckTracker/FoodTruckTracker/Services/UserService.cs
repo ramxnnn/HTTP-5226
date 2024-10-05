@@ -1,53 +1,47 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using FoodTruckTracker.Data;
 using LocalFoodTruckTrackerSystem.Models;
-using FoodTruckTracker.Controllers.Interfaces; // Include this namespace for the interface
+using FoodTruckTracker.Controllers.Interfaces; // Import the existing interface
+using FoodTruckTracker.Data;
 
-namespace FoodTruckTracker.Controllers
+namespace FoodTruckTracker.Services
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UsersController : ControllerBase, IUsersController // Implement the interface
+    public class UserService : IUsersController // Implement the existing interface
     {
         private readonly ApplicationDbContext _context;
 
-        public UsersController(ApplicationDbContext context)
+        public UserService(ApplicationDbContext context)
         {
             _context = context;
         }
 
         // GET: api/Users
-        [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUser()
         {
             return await _context.User.ToListAsync();
         }
 
-        // GET: api/Users/5
-        [HttpGet("{id}")]
+        // GET: api/Users/{id}
         public async Task<ActionResult<User>> GetUser(int id)
         {
             var user = await _context.User.FindAsync(id);
 
             if (user == null)
             {
-                return NotFound();
+                return new NotFoundResult(); // Return 404 if not found
             }
 
-            return user;
+            return user; // Return the found user
         }
 
-        // PUT: api/Users/5
-        [HttpPut("{id}")]
+        // PUT: api/Users/{id}
         public async Task<IActionResult> PutUser(int id, User user)
         {
             if (id != user.UserId)
             {
-                return BadRequest();
+                return new BadRequestResult(); // Return 400 for bad request
             }
 
             _context.Entry(user).State = EntityState.Modified;
@@ -60,41 +54,36 @@ namespace FoodTruckTracker.Controllers
             {
                 if (!UserExists(id))
                 {
-                    return NotFound();
+                    return new NotFoundResult(); // Return 404 if item does not exist
                 }
-                else
-                {
-                    throw;
-                }
+                throw; // Rethrow if there's another issue
             }
 
-            return NoContent();
+            return new NoContentResult(); // Return 204 No Content on success
         }
 
         // POST: api/Users
-        [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
             _context.User.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = user.UserId }, user);
+            return new CreatedAtActionResult(nameof(GetUser), "Users", new { id = user.UserId }, user);
         }
 
-        // DELETE: api/Users/5
-        [HttpDelete("{id}")]
+        // DELETE: api/Users/{id}
         public async Task<IActionResult> DeleteUser(int id)
         {
             var user = await _context.User.FindAsync(id);
             if (user == null)
             {
-                return NotFound();
+                return new NotFoundResult(); // Return 404 if item not found
             }
 
             _context.User.Remove(user);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return new NoContentResult(); // Return 204 No Content on success
         }
 
         private bool UserExists(int id)

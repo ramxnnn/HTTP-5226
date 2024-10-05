@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FoodTruckTracker.Data;
 using LocalFoodTruckTrackerSystem.Models;
+using FoodTruckTracker.Controllers.Interfaces; // Include this namespace for the interface
 
 namespace FoodTruckTracker.Controllers
 {
@@ -28,7 +27,7 @@ namespace FoodTruckTracker.Controllers
             return await _context.Locations.ToListAsync();
         }
 
-        // GET: api/Locations/5
+        // GET: api/Locations/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<Location>> GetLocation(int id)
         {
@@ -42,8 +41,7 @@ namespace FoodTruckTracker.Controllers
             return location;
         }
 
-        // PUT: api/Locations/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Locations/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> PutLocation(int id, Location location)
         {
@@ -74,17 +72,16 @@ namespace FoodTruckTracker.Controllers
         }
 
         // POST: api/Locations
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Location>> PostLocation(Location location)
         {
             _context.Locations.Add(location);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetLocation", new { id = location.LocationId }, location);
+            return CreatedAtAction(nameof(GetLocation), new { id = location.LocationId }, location);
         }
 
-        // DELETE: api/Locations/5
+        // DELETE: api/Locations/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteLocation(int id)
         {

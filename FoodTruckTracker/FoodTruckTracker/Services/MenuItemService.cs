@@ -1,53 +1,47 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using FoodTruckTracker.Data;
 using LocalFoodTruckTrackerSystem.Models;
-using FoodTruckTracker.Controllers.Interfaces; // Include this namespace for the interface
+using FoodTruckTracker.Controllers.Interfaces; // Import the existing interface
+using FoodTruckTracker.Data;
+using Microsoft.AspNetCore.Mvc;
 
-namespace FoodTruckTracker.Controllers
+namespace FoodTruckTracker.Services
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class MenuItemsController : ControllerBase, IMenuItemsController // Implement the interface
+    public class MenuItemService : IMenuItemsController // Implement the existing interface
     {
         private readonly ApplicationDbContext _context;
 
-        public MenuItemsController(ApplicationDbContext context)
+        public MenuItemService(ApplicationDbContext context)
         {
             _context = context;
         }
 
         // GET: api/MenuItems
-        [HttpGet]
         public async Task<ActionResult<IEnumerable<MenuItem>>> GetMenuItems()
         {
             return await _context.MenuItems.ToListAsync();
         }
 
         // GET: api/MenuItems/{id}
-        [HttpGet("{id}")]
         public async Task<ActionResult<MenuItem>> GetMenuItem(int id)
         {
             var menuItem = await _context.MenuItems.FindAsync(id);
 
             if (menuItem == null)
             {
-                return NotFound();
+                return new NotFoundResult(); // Return 404 if not found
             }
 
-            return menuItem;
+            return menuItem; // Return the found menu item
         }
 
         // PUT: api/MenuItems/{id}
-        [HttpPut("{id}")]
         public async Task<IActionResult> PutMenuItem(int id, MenuItem menuItem)
         {
             if (id != menuItem.MenuItemId)
             {
-                return BadRequest();
+                return new BadRequestResult(); // Return 400 for bad request
             }
 
             _context.Entry(menuItem).State = EntityState.Modified;
@@ -60,41 +54,36 @@ namespace FoodTruckTracker.Controllers
             {
                 if (!MenuItemExists(id))
                 {
-                    return NotFound();
+                    return new NotFoundResult(); // Return 404 if item does not exist
                 }
-                else
-                {
-                    throw;
-                }
+                throw; // Rethrow if there's another issue
             }
 
-            return NoContent();
+            return new NoContentResult(); // Return 204 No Content on success
         }
 
         // POST: api/MenuItems
-        [HttpPost]
         public async Task<ActionResult<MenuItem>> PostMenuItem(MenuItem menuItem)
         {
             _context.MenuItems.Add(menuItem);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetMenuItem), new { id = menuItem.MenuItemId }, menuItem);
+            return new CreatedAtActionResult(nameof(GetMenuItem), "MenuItems", new { id = menuItem.MenuItemId }, menuItem);
         }
 
         // DELETE: api/MenuItems/{id}
-        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMenuItem(int id)
         {
             var menuItem = await _context.MenuItems.FindAsync(id);
             if (menuItem == null)
             {
-                return NotFound();
+                return new NotFoundResult(); // Return 404 if item not found
             }
 
             _context.MenuItems.Remove(menuItem);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return new NoContentResult(); // Return 204 No Content on success
         }
 
         private bool MenuItemExists(int id)
