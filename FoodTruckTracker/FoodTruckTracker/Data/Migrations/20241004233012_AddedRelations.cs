@@ -5,7 +5,7 @@
 namespace FoodTruckTracker.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class AddMenuItemFix : Migration
+    public partial class AddedRelations : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

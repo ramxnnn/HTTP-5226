@@ -12,11 +12,11 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-FoodTruckTracker-0e6e134b-5523-4ddc-9b84-2c6d6e05e2b6")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-FoodTruckTracker-2ff4d208-793a-4dc1-9f83-c83950c3285f")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodTruckTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a91d57fe0c304961ad43d9f9626b168fe54cbf1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cb5e0bc707ce5b12a5de69014649cd55efdf8b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodTruckTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodTruckTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
