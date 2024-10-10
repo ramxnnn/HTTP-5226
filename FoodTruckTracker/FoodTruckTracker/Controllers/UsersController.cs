@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FoodTruckTracker.Data;
 using LocalFoodTruckTrackerSystem.Models;
-using FoodTruckTracker.Controllers.Interfaces; // Include this namespace for the interface
+using FoodTruckTracker.Controllers.Interfaces; 
 
 namespace FoodTruckTracker.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase, IUsersController // Implement the interface
+    public class UsersController : ControllerBase, IUsersController 
     {
         private readonly ApplicationDbContext _context;
 
