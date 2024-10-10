@@ -3,12 +3,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LocalFoodTruckTrackerSystem.Models;
-using FoodTruckTracker.Controllers.Interfaces; // Import the existing interface
+using FoodTruckTracker.Controllers.Interfaces; 
 using FoodTruckTracker.Data;
 
 namespace FoodTruckTracker.Services
 {
-    public class UserService : IUsersController // Implement the existing interface
+    public class UserService : IUsersController 
     {
         private readonly ApplicationDbContext _context;
 
