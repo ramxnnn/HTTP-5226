@@ -2,13 +2,13 @@
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using LocalFoodTruckTrackerSystem.Models;
-using FoodTruckTracker.Controllers.Interfaces; // Import the existing interface
+using FoodTruckTracker.Controllers.Interfaces; 
 using FoodTruckTracker.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FoodTruckTracker.Services
 {
-    public class MenuItemService : IMenuItemsController // Implement the existing interface
+    public class MenuItemService : IMenuItemsController 
     {
         private readonly ApplicationDbContext _context;
 
