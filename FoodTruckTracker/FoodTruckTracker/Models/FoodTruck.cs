@@ -18,7 +18,7 @@ namespace LocalFoodTruckTrackerSystem.Models
         [ForeignKey("Location")]
         public int LocationId { get; set; }  
 
-        public Location? Location { get; set; }  // Navigation property for the Location
+        public Location? Location { get; set; }  
 
         // A food truck can have many menu items
         public ICollection<MenuItem>? MenuItems { get; set; } = new List<MenuItem>();
