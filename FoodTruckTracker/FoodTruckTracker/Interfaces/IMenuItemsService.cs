@@ -5,7 +5,7 @@ using LocalFoodTruckTrackerSystem.Models;
 
 namespace FoodTruckTracker.Controllers.Interfaces
 {
-    public interface IMenuItemsController
+    public interface IMenuItemsService
     {
         Task<ActionResult<IEnumerable<MenuItem>>> GetMenuItems();
         Task<ActionResult<MenuItem>> GetMenuItem(int id);

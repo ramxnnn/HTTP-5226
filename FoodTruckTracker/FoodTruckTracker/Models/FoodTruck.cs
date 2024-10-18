@@ -25,6 +25,7 @@ namespace LocalFoodTruckTrackerSystem.Models
 
         // A food truck can be favorited by multiple users
         public ICollection<User>? FavoritedByUsers { get; set; } = new List<User>();
+        public int Id { get; internal set; }
     }
 
     public class FoodTruckDto
@@ -37,7 +38,8 @@ namespace LocalFoodTruckTrackerSystem.Models
 
         public required string Contact { get; set; }
 
-        public int LocationId { get; set; }  
+        public int LocationId { get; set; }
+        public string? LocationAddress { get; set; }
     }
 
 }

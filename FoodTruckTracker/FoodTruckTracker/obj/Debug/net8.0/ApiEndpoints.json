@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksController",
+    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksApiController",
     "Method": "GetFoodTrucks",
-    "RelativePath": "api/FoodTrucks",
+    "RelativePath": "api/FoodTrucksApi",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,9 +20,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksController",
+    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksApiController",
     "Method": "PostFoodTruck",
-    "RelativePath": "api/FoodTrucks",
+    "RelativePath": "api/FoodTrucksApi",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksController",
+    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksApiController",
     "Method": "GetFoodTruck",
-    "RelativePath": "api/FoodTrucks/{id}",
+    "RelativePath": "api/FoodTrucksApi/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksController",
+    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksApiController",
     "Method": "PutFoodTruck",
-    "RelativePath": "api/FoodTrucks/{id}",
+    "RelativePath": "api/FoodTrucksApi/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -93,9 +93,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksController",
+    "ContainingType": "FoodTruckTracker.Controllers.FoodTrucksApiController",
     "Method": "DeleteFoodTruck",
-    "RelativePath": "api/FoodTrucks/{id}",
+    "RelativePath": "api/FoodTrucksApi/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -109,9 +109,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationsController",
+    "ContainingType": "FoodTruckTracker.Controllers.LocationsApiController",
     "Method": "GetLocations",
-    "RelativePath": "api/Locations",
+    "RelativePath": "api/LocationsApi",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -129,9 +129,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationsController",
+    "ContainingType": "FoodTruckTracker.Controllers.LocationsApiController",
     "Method": "PostLocation",
-    "RelativePath": "api/Locations",
+    "RelativePath": "api/LocationsApi",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -155,9 +155,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationsController",
+    "ContainingType": "FoodTruckTracker.Controllers.LocationsApiController",
     "Method": "GetLocation",
-    "RelativePath": "api/Locations/{id}",
+    "RelativePath": "api/LocationsApi/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -181,9 +181,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationsController",
+    "ContainingType": "FoodTruckTracker.Controllers.LocationsApiController",
     "Method": "PutLocation",
-    "RelativePath": "api/Locations/{id}",
+    "RelativePath": "api/LocationsApi/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -202,9 +202,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.LocationsController",
+    "ContainingType": "FoodTruckTracker.Controllers.LocationsApiController",
     "Method": "DeleteLocation",
-    "RelativePath": "api/Locations/{id}",
+    "RelativePath": "api/LocationsApi/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -218,9 +218,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsController",
+    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsApiController",
     "Method": "GetMenuItems",
-    "RelativePath": "api/MenuItems",
+    "RelativePath": "api/MenuItemsApi",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -238,9 +238,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsController",
+    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsApiController",
     "Method": "PostMenuItem",
-    "RelativePath": "api/MenuItems",
+    "RelativePath": "api/MenuItemsApi",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -264,9 +264,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsController",
+    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsApiController",
     "Method": "GetMenuItem",
-    "RelativePath": "api/MenuItems/{id}",
+    "RelativePath": "api/MenuItemsApi/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -290,9 +290,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsController",
+    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsApiController",
     "Method": "PutMenuItem",
-    "RelativePath": "api/MenuItems/{id}",
+    "RelativePath": "api/MenuItemsApi/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -311,9 +311,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsController",
+    "ContainingType": "FoodTruckTracker.Controllers.MenuItemsApiController",
     "Method": "DeleteMenuItem",
-    "RelativePath": "api/MenuItems/{id}",
+    "RelativePath": "api/MenuItemsApi/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -327,9 +327,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.UsersController",
+    "ContainingType": "FoodTruckTracker.Controllers.UsersApiController",
     "Method": "GetUser",
-    "RelativePath": "api/Users",
+    "RelativePath": "api/UsersApi",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -347,9 +347,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.UsersController",
+    "ContainingType": "FoodTruckTracker.Controllers.UsersApiController",
     "Method": "PostUser",
-    "RelativePath": "api/Users",
+    "RelativePath": "api/UsersApi",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -373,9 +373,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.UsersController",
+    "ContainingType": "FoodTruckTracker.Controllers.UsersApiController",
     "Method": "GetUser",
-    "RelativePath": "api/Users/{id}",
+    "RelativePath": "api/UsersApi/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -399,9 +399,9 @@
     ]
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.UsersController",
+    "ContainingType": "FoodTruckTracker.Controllers.UsersApiController",
     "Method": "PutUser",
-    "RelativePath": "api/Users/{id}",
+    "RelativePath": "api/UsersApi/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -420,9 +420,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FoodTruckTracker.Controllers.UsersController",
+    "ContainingType": "FoodTruckTracker.Controllers.UsersApiController",
     "Method": "DeleteUser",
-    "RelativePath": "api/Users/{id}",
+    "RelativePath": "api/UsersApi/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

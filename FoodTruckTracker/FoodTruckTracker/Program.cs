@@ -22,16 +22,12 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IFoodTruckService, FoodTruckService>();
+
+// Corrected Service Registration
+builder.Services.AddScoped<IFoodTruckService, FoodTruckService>(); // Updated here
 builder.Services.AddScoped<ILocationService, LocationService>();
-builder.Services.AddScoped<IMenuItemsController, MenuItemService>();
-builder.Services.AddScoped<IUsersController, UserService>();
-
-
-
-
-
-// Register the FoodTruckService
+builder.Services.AddScoped<IMenuItemsService, MenuItemService>();
+builder.Services.AddScoped<IUserServices, UserService>();
 
 var app = builder.Build();
 
@@ -43,7 +39,6 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

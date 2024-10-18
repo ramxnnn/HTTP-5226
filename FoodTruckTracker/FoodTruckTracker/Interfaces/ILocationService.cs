@@ -9,6 +9,7 @@ namespace FoodTruckTracker.Services.Interfaces
     {
         Task<IEnumerable<Location>> GetLocations();
         Task<Location?> GetLocation(int id);
+        Task<Location> GetLocationById(int locationId);
         Task<bool> UpdateLocation(Location location);
         Task<Location> AddLocation(Location location);
         Task<bool> DeleteLocation(int id);

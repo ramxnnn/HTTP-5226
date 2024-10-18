@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FoodTruckTracker.Services
 {
-    public class MenuItemService : IMenuItemsController 
+    public class MenuItemService : IMenuItemsService 
     {
         private readonly ApplicationDbContext _context;
 

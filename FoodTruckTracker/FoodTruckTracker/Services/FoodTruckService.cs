@@ -23,7 +23,7 @@ namespace CoreEntityFramework.Services
         }
 
         // Get a specific food truck by id
-        public async Task<FoodTruck?> GetFoodTruck(int id)
+        public async Task<FoodTruck?> GetFoodTruckById(int id)
         {
             return await _context.FoodTrucks.FindAsync(id);
         }
@@ -37,7 +37,16 @@ namespace CoreEntityFramework.Services
         // Update a food truck
         public async Task<bool> UpdateFoodTruck(FoodTruck foodTruck)
         {
-            _context.Entry(foodTruck).State = EntityState.Modified;
+            // Ensure the food truck exists before updating
+            if (!await FoodTruckExists(foodTruck.FoodTruckId))
+            {
+                return false; // Return false if the food truck doesn't exist
+            }
+
+            // Attach the food truck and mark it as modified
+            _context.FoodTrucks.Update(foodTruck); // Use Update method to track changes
+
+            // Save changes to the database
             return await _context.SaveChangesAsync() > 0;
         }
 
@@ -60,6 +69,11 @@ namespace CoreEntityFramework.Services
 
             _context.FoodTrucks.Remove(foodTruck);
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        public Task<FoodTruck?> GetFoodTruck(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

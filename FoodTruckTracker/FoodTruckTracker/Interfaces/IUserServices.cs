@@ -5,7 +5,7 @@ using LocalFoodTruckTrackerSystem.Models;
 
 namespace FoodTruckTracker.Controllers.Interfaces
 {
-    public interface IUsersController
+    public interface IUserServices
     {
         Task<ActionResult<IEnumerable<User>>> GetUser();
         Task<ActionResult<User>> GetUser(int id);

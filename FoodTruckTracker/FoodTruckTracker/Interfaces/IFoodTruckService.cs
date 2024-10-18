@@ -6,6 +6,7 @@ namespace CoreEntityFramework.Interfaces
 {
     public interface IFoodTruckService
     {
+        Task<FoodTruck?> GetFoodTruckById(int id);
         Task<IEnumerable<FoodTruck>> GetFoodTrucks();
         Task<FoodTruck?> GetFoodTruck(int id);
         Task<bool> FoodTruckExists(int id);

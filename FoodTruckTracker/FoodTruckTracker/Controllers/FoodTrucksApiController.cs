@@ -8,11 +8,11 @@ namespace FoodTruckTracker.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FoodTrucksController : ControllerBase
+    public class FoodTrucksApiController : ControllerBase
     {
         private readonly IFoodTruckService _foodTruckService;
 
-        public FoodTrucksController(IFoodTruckService foodTruckService)
+        public FoodTrucksApiController(IFoodTruckService foodTruckService)
         {
             _foodTruckService = foodTruckService;
         }

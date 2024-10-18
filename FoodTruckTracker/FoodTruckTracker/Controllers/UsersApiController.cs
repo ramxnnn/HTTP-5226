@@ -11,11 +11,11 @@ namespace FoodTruckTracker.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase, IUsersController 
+    public class UsersApiController : ControllerBase, IUserServices 
     {
         private readonly ApplicationDbContext _context;
 
-        public UsersController(ApplicationDbContext context)
+        public UsersApiController(ApplicationDbContext context)
         {
             _context = context;
         }

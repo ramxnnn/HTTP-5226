@@ -8,7 +8,7 @@ using FoodTruckTracker.Data;
 
 namespace FoodTruckTracker.Services
 {
-    public class UserService : IUsersController 
+    public class UserService : IUserServices
     {
         private readonly ApplicationDbContext _context;
 
