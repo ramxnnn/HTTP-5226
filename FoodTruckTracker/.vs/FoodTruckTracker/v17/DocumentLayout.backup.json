@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\views\\menuitem\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\views\\menuitem\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\views\\menuitem\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\views\\menuitem\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\interfaces\\imenuitemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\interfaces\\imenuitemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\services\\menuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\services\\menuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\views\\menuitem\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\views\\menuitem\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|c:\\users\\admin\\source\\repos\\http-5226\\foodtrucktracker\\foodtrucktracker\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793E2F1A-CA01-4CD4-86E0-E9B7B7CBC91D}|FoodTruckTracker\\FoodTruckTracker.csproj|solutionrelative:foodtrucktracker\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Views\\MenuItem\\Delete.cshtml",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Views\\MenuItem\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Views\\MenuItem\\Delete.cshtml",
-              "RelativeToolTip": "FoodTruckTracker\\Views\\MenuItem\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "FoodTruckTracker\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "FoodTruckTracker\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T02:16:58.415Z",
+              "WhenOpened": "2024-10-19T03:03:25.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Views\\MenuItem\\Edit.cshtml",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Views\\MenuItem\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Views\\MenuItem\\Edit.cshtml",
-              "RelativeToolTip": "FoodTruckTracker\\Views\\MenuItem\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T01:48:23.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IMenuItemsService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Interfaces\\IMenuItemsService.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Interfaces\\IMenuItemsService.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Interfaces\\IMenuItemsService.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Interfaces\\IMenuItemsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "FoodTruckTracker\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Services\\UserService.cs",
+              "RelativeToolTip": "FoodTruckTracker\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T01:37:36.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MenuItemService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Services\\MenuItemService.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Services\\MenuItemService.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Services\\MenuItemService.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Services\\MenuItemService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowFMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T01:37:29.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Views\\MenuItem\\Create.cshtml",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Views\\MenuItem\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Views\\MenuItem\\Create.cshtml",
-              "RelativeToolTip": "FoodTruckTracker\\Views\\MenuItem\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T01:36:12.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MenuItemController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Controllers\\MenuItemController.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Controllers\\MenuItemController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Controllers\\MenuItemController.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Controllers\\MenuItemController.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAkwH4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T01:27:33.667Z",
+              "WhenOpened": "2024-10-19T03:03:17.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\MenuItem.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Models\\MenuItem.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\MenuItem.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Models\\MenuItem.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBkAAAAcAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FoodTruckTracker\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Models\\User.cs",
+              "RelativeToolTip": "FoodTruckTracker\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T01:26:24.178Z",
+              "WhenOpened": "2024-10-19T03:03:11.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Program.cs",
-              "RelativeDocumentMoniker": "FoodTruckTracker\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Program.cs",
-              "RelativeToolTip": "FoodTruckTracker\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Interfaces\\IUserServices.cs",
+              "RelativeDocumentMoniker": "FoodTruckTracker\\Interfaces\\IUserServices.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Interfaces\\IUserServices.cs",
+              "RelativeToolTip": "FoodTruckTracker\\Interfaces\\IUserServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T01:39:19.81Z",
+              "WhenOpened": "2024-10-19T03:03:07.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "FoodTruckTracker\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\Controllers\\UserController.cs",
+              "RelativeToolTip": "FoodTruckTracker\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T03:02:55.478Z",
               "EditorCaption": ""
             }
           ]
