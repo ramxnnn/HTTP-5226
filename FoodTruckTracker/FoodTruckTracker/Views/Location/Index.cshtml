@@ -4,34 +4,39 @@
     ViewData["Title"] = "Locations";
 }
 
-<h1>Locations</h1>
+<div class="container">
+    <div class="d-flex align-items-center my-4">
+        <img src="~/images/location.png" alt="Locations" class="img-fluid" style="max-width: 150px; margin-right: 20px;" />
+        <h1>Locations</h1>
+    </div>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Create New Location</a>
-</p>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Create New Location</a>
+    </p>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var location in Model)
-        {
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <td>@location.Address</td>
-                <td>@location.City</td>
-                <td>@location.State</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@location.LocationId" class="btn btn-info">Details</a>
-                    <a asp-action="Edit" asp-route-id="@location.LocationId" class="btn btn-warning">Edit</a>
-                    <a asp-action="Delete" asp-route-id="@location.LocationId" class="btn btn-danger">Delete</a>
-                </td>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Actions</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var location in Model)
+            {
+                <tr>
+                    <td>@location.Address</td>
+                    <td>@location.City</td>
+                    <td>@location.State</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@location.LocationId" class="btn btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@location.LocationId" class="btn btn-warning">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@location.LocationId" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

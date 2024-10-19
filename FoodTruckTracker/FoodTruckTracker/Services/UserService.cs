@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LocalFoodTruckTrackerSystem.Models;
 using FoodTruckTracker.Controllers.Interfaces; 
@@ -54,12 +52,12 @@ namespace FoodTruckTracker.Services
             {
                 if (!UserExists(id))
                 {
-                    return new NotFoundResult(); // Return 404 if item does not exist
+                    return new NotFoundResult(); 
                 }
-                throw; // Rethrow if there's another issue
+                throw; 
             }
 
-            return new NoContentResult(); // Return 204 No Content on success
+            return new NoContentResult(); 
         }
 
         // POST: api/Users
@@ -83,7 +81,7 @@ namespace FoodTruckTracker.Services
             _context.User.Remove(user);
             await _context.SaveChangesAsync();
 
-            return new NoContentResult(); // Return 204 No Content on success
+            return new NoContentResult(); 
         }
 
         private bool UserExists(int id)

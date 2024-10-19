@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using LocalFoodTruckTrackerSystem.Models;
 using FoodTruckTracker.Services.Interfaces;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Linq;
 using CoreEntityFramework.Interfaces;
 
 namespace FoodTruckTracker.Controllers
@@ -97,7 +95,7 @@ namespace FoodTruckTracker.Controllers
                 LocationId = foodTruck.LocationId
             };
 
-            return View(foodTruckDto); // Return the DTO directly
+            return View(foodTruckDto);
         }
 
         // POST: FoodTruck/Edit/{id}
@@ -106,7 +104,7 @@ namespace FoodTruckTracker.Controllers
         {
             if (id != foodTruckDto.FoodTruckId)
             {
-                return BadRequest(); // Ensure the ID in the URL matches the food truck being edited
+                return BadRequest(); 
             }
 
             if (ModelState.IsValid)
@@ -131,7 +129,7 @@ namespace FoodTruckTracker.Controllers
             // If we reach here, it means there was an error, so we repopulate the locations dropdown
             var locations = await _locationService.GetLocations();
             ViewBag.LocationId = new SelectList(locations, "LocationId", "Address", foodTruckDto.LocationId);
-            return View(foodTruckDto); // Return to the Edit view with the invalid model
+            return View(foodTruckDto); 
         }
 
         // GET: FoodTruck/Delete/{id}

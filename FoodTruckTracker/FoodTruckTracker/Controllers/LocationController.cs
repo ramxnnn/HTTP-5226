@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using LocalFoodTruckTrackerSystem.Models;
 using FoodTruckTracker.Services.Interfaces;
-using System.Threading.Tasks;
-
 namespace FoodTruckTracker.Controllers
 {
     public class LocationController : Controller
@@ -46,9 +44,9 @@ namespace FoodTruckTracker.Controllers
             if (ModelState.IsValid)
             {
                 await _locationService.AddLocation(location);
-                return RedirectToAction(nameof(Index)); // Redirect to the index after successful creation
+                return RedirectToAction(nameof(Index)); 
             }
-            return View(location); // Return to the create view with the invalid model
+            return View(location); 
         }
 
         // GET: Location/Edit/{id}
@@ -69,7 +67,7 @@ namespace FoodTruckTracker.Controllers
         {
             if (id != location.LocationId)
             {
-                return BadRequest(); // Ensure the ID in the URL matches the location being edited
+                return BadRequest(); 
             }
 
             if (ModelState.IsValid)
@@ -77,12 +75,12 @@ namespace FoodTruckTracker.Controllers
                 var success = await _locationService.UpdateLocation(location);
                 if (success)
                 {
-                    return RedirectToAction(nameof(Index)); // Redirect to index after successful update
+                    return RedirectToAction(nameof(Index)); 
                 }
-                return NotFound(); // Return a 404 if the location could not be updated
+                return NotFound(); 
             }
 
-            return View(location); // Return to the edit view with the invalid model
+            return View(location);
         }
 
         // GET: Location/Delete/{id}
@@ -93,7 +91,7 @@ namespace FoodTruckTracker.Controllers
             {
                 return NotFound();
             }
-            return View(location); // Return the location for delete confirmation
+            return View(location); 
         }
 
         // POST: Location/DeleteConfirmed/{id}

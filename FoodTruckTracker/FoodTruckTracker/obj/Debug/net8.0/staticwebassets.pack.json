@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\wwwroot\\images\\bgimage.png",
+      "PackagePath": "staticwebassets\\images\\bgimage.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\wwwroot\\images\\foodtruck1.jpg",
+      "PackagePath": "staticwebassets\\images\\foodtruck1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\wwwroot\\images\\location.png",
+      "PackagePath": "staticwebassets\\images\\location.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -17,7 +17,7 @@ namespace FoodTruckTracker.Controllers
         public async Task<IActionResult> Index()
         {
             var users = await _userServices.GetUser();
-            return View(users.Value); // Extract the list from the ActionResult
+            return View(users.Value); 
         }
 
         // GET: User/Details/{id}

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using LocalFoodTruckTrackerSystem.Models;
 using FoodTruckTracker.Controllers.Interfaces;
-using Microsoft.AspNetCore.Mvc.Rendering; // Add this for SelectListItem
 
 namespace FoodTruckTracker.Controllers
 {
@@ -49,18 +48,18 @@ namespace FoodTruckTracker.Controllers
             if (ModelState.IsValid)
             {
                 await _menuItemsService.AddMenuItem(menuItem);
-                return RedirectToAction(nameof(Index)); // Redirect to index after successful creation
+                return RedirectToAction(nameof(Index)); 
             }
 
             // Log validation errors
             var errors = ModelState.Values.SelectMany(v => v.Errors);
             foreach (var error in errors)
             {
-                Console.WriteLine(error.ErrorMessage); // Replace with your logging framework
+                Console.WriteLine(error.ErrorMessage); 
             }
 
-            ViewBag.FoodTruckIdList = await _menuItemsService.GetFoodTruckSelectList(); // Populate dropdown again
-            return View(menuItem); // Return to the create view with the invalid model
+            ViewBag.FoodTruckIdList = await _menuItemsService.GetFoodTruckSelectList(); 
+            return View(menuItem); 
         }
 
         // GET: MenuItem/Edit/{id}
@@ -71,8 +70,8 @@ namespace FoodTruckTracker.Controllers
             {
                 return NotFound();
             }
-            ViewBag.FoodTruckIdList = await _menuItemsService.GetFoodTruckSelectList(); // Populate dropdown
-            return View(menuItem); // Return the menu item for edit view
+            ViewBag.FoodTruckIdList = await _menuItemsService.GetFoodTruckSelectList(); 
+            return View(menuItem); 
         }
 
         // POST: MenuItem/Edit/{id}
@@ -82,7 +81,7 @@ namespace FoodTruckTracker.Controllers
         {
             if (id != menuItem.MenuItemId)
             {
-                return BadRequest(); // Ensure the ID in the URL matches the menu item being edited
+                return BadRequest(); 
             }
 
             if (ModelState.IsValid)
@@ -90,7 +89,7 @@ namespace FoodTruckTracker.Controllers
                 var success = await _menuItemsService.UpdateMenuItem(menuItem);
                 if (success)
                 {
-                    return RedirectToAction(nameof(Index)); // Redirect to index after successful update
+                    return RedirectToAction(nameof(Index)); 
                 }
                 else
                 {
@@ -98,8 +97,8 @@ namespace FoodTruckTracker.Controllers
                 }
             }
 
-            ViewBag.FoodTruckIdList = await _menuItemsService.GetFoodTruckSelectList(); // Populate dropdown again
-            return View(menuItem); // Return to the edit view with the invalid model
+            ViewBag.FoodTruckIdList = await _menuItemsService.GetFoodTruckSelectList();
+            return View(menuItem); 
         }
 
         // GET: MenuItem/Delete/{id}
@@ -110,7 +109,7 @@ namespace FoodTruckTracker.Controllers
             {
                 return NotFound();
             }
-            return View(menuItem); // Return the menu item for delete confirmation
+            return View(menuItem); 
         }
 
         // POST: MenuItem/Delete/{id}

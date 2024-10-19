@@ -7,13 +7,13 @@ namespace LocalFoodTruckTrackerSystem.Models
         [Key]
         public int MenuItemId { get; set; }
 
-        [Required] // Ensure this field is required
+        [Required] 
         public required string Name { get; set; }
 
-        [Required] // Ensure this field is required
+        [Required] 
         public required string Description { get; set; }
 
-        [Required] // Ensure this field is required
+        [Required] 
         [Range(0.01, double.MaxValue, ErrorMessage = "Price must be a positive value.")]
         public required decimal Price { get; set; }
 

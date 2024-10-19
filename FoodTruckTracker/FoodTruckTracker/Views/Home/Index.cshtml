@@ -2,7 +2,32 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container text-center">
+    <h1 class="display-4 mt-5">Welcome to the Local Food Truck Tracker!</h1>
+    <p class="lead mt-3">
+        Our app helps you find and explore local food trucks in your area. Whether you're craving tacos, burgers, or something unique, you can easily discover the best food trucks and see their menus, locations, and contact details.
+    </p>
+    <hr class="my-4">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <h3>Discover</h3>
+            <p>Explore a variety of food trucks offering delicious food near you.</p>
+            <a asp-controller="FoodTruck" asp-action="Index" class="btn btn-primary">Browse Food Trucks</a>
+        </div>
+        <div class="col-md-4">
+            <h3>Locations</h3>
+            <p>Find out where your favorite food trucks are located right now.</p>
+            <a asp-controller="Location" asp-action="Index" class="btn btn-primary">View Locations</a>
+        </div>
+        <div class="col-md-4">
+            <h3>Menus</h3>
+            <p>Check out the menu options before visiting and see what each food truck has to offer.</p>
+            <a asp-controller="MenuItem" asp-action="Index" class="btn btn-primary">Explore Menus</a>
+        </div>
+    </div>
+    <hr class="my-4">
+    <p class="text-muted">
+        Your one-stop destination for discovering and tracking local food trucks in your city. Enjoy your meal on wheels!
+    </p>
 </div>
+

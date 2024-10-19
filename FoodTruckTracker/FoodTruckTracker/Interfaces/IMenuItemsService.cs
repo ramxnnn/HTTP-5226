@@ -8,11 +8,11 @@ namespace FoodTruckTracker.Controllers.Interfaces
 {
     public interface IMenuItemsService
     {
-        Task<IEnumerable<MenuItem>> GetMenuItems(); // No change needed
-        Task<MenuItem?> GetMenuItemById(int id); // No change needed
-        Task<bool> UpdateMenuItem(MenuItem menuItem); // No change needed
-        Task AddMenuItem(MenuItem menuItem); // No change needed
-        Task<bool> DeleteMenuItem(int id); // No change needed
-        Task<IEnumerable<SelectListItem>> GetFoodTruckSelectList(); // Update return type
+        Task<IEnumerable<MenuItem>> GetMenuItems(); 
+        Task<MenuItem?> GetMenuItemById(int id); 
+        Task<bool> UpdateMenuItem(MenuItem menuItem); 
+        Task AddMenuItem(MenuItem menuItem); 
+        Task<bool> DeleteMenuItem(int id); 
+        Task<IEnumerable<SelectListItem>> GetFoodTruckSelectList(); 
     }
 }

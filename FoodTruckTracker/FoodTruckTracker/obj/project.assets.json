@@ -8667,11 +8667,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
       "projectName": "FoodTruckTracker",
-      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\FoodTruckTracker.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\HTTP-5226\\FoodTruckTracker\\FoodTruckTracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8768,7 +8768,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

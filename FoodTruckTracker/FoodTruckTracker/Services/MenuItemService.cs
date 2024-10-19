@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq; // Add this for SelectListItem
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc; // Add this for SelectListItem
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using LocalFoodTruckTrackerSystem.Models;
 using FoodTruckTracker.Controllers.Interfaces;
 using FoodTruckTracker.Data;
@@ -75,8 +71,8 @@ namespace FoodTruckTracker.Services
             var foodTrucks = await _context.FoodTrucks.ToListAsync();
             return foodTrucks.Select(ft => new SelectListItem
             {
-                Value = ft.FoodTruckId.ToString(), // Assuming FoodTruckId is of type int
-                Text = ft.Name // Assuming there's a 'Name' property in FoodTruck for display
+                Value = ft.FoodTruckId.ToString(), 
+                Text = ft.Name 
             });
         }
     }

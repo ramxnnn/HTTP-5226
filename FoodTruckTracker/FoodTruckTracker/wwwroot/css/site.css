@@ -19,4 +19,216 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-image: url('../images/bgimage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.custom-navbar {
+    background-color: #343a40; 
+    padding: 1rem; 
+    border-bottom: 3px solid #ff6600; 
+}
+
+    .custom-navbar .navbar-brand {
+        color: #ff6600; 
+        font-size: 1.5rem; 
+        font-weight: bold;
+    }
+
+    .custom-navbar .nav-link {
+        color: #ffffff; 
+        font-size: 1.1rem;
+        margin-left: 10px; 
+        padding: 0.5rem 1rem;
+        transition: color 0.3s ease, background-color 0.3s ease; 
+    }
+
+        .custom-navbar .nav-link:hover {
+            background-color: #ff6600; 
+            color: #ffffff; 
+            border-radius: 5px; 
+        }
+
+    .custom-navbar .navbar-toggler {
+        border: none; 
+    }
+
+    .custom-navbar .nav-link.active {
+        background-color: #ff6600; 
+        border-radius: 5px;
+    }
+
+
+.navbar.scrolled {
+    background-color: #ff6600 !important;
+}
+
+
+.btn-primary {
+    background-color: #ff6600; 
+    border-color: #ff6600; 
+}
+
+   
+    .btn-primary:hover {
+        background-color: #cc5200; 
+        border-color: #cc5200; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    }
+
+  
+    .btn-primary:active {
+        background-color: #b34700; 
+        border-color: #b34700;
+    }
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+    .table th,
+    .table td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #f8f9fa;
+        color: #333;
+        font-weight: bold;
+    }
+
+
+    .table tbody tr:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+
+.btn {
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
+
+    .btn-primary:hover {
+        background-color: #cc5200;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.create-button {
+    display: block;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.table-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin-bottom: 30px; 
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0 10px; 
+}
+
+  
+    .table thead th {
+        background-color: rgba(0, 123, 255, 0.7);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    .table tbody td {
+        background-color: rgba(255, 255, 255, 0.5); 
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+   
+    .table tbody tr:hover td {
+        background-color: rgba(0, 123, 255, 0.1);
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+    }
+
+
+.btn {
+    margin: 0 5px; 
+    font-weight: bold;
+}
+
+.btn-info:hover, .btn-warning:hover, .btn-danger:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+

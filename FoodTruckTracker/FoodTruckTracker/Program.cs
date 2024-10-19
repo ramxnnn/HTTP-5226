@@ -9,8 +9,8 @@ using FoodTruckTracker.Controllers.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -23,15 +23,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Corrected Service Registration
-builder.Services.AddScoped<IFoodTruckService, FoodTruckService>(); // Updated here
+
+builder.Services.AddScoped<IFoodTruckService, FoodTruckService>(); 
 builder.Services.AddScoped<ILocationService, LocationService>();
 builder.Services.AddScoped<IMenuItemsService, MenuItemService>();
 builder.Services.AddScoped<IUserServices, UserService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
