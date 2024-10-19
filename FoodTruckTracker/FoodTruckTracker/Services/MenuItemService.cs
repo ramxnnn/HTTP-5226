@@ -1,14 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.Linq; // Add this for SelectListItem
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc; // Add this for SelectListItem
 using Microsoft.EntityFrameworkCore;
 using LocalFoodTruckTrackerSystem.Models;
-using FoodTruckTracker.Controllers.Interfaces; 
+using FoodTruckTracker.Controllers.Interfaces;
 using FoodTruckTracker.Data;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace FoodTruckTracker.Services
 {
-    public class MenuItemService : IMenuItemsService 
+    public class MenuItemService : IMenuItemsService
     {
         private readonly ApplicationDbContext _context;
 
@@ -17,78 +19,65 @@ namespace FoodTruckTracker.Services
             _context = context;
         }
 
-        // GET: api/MenuItems
-        public async Task<ActionResult<IEnumerable<MenuItem>>> GetMenuItems()
+        // Get all MenuItems
+        public async Task<IEnumerable<MenuItem>> GetMenuItems()
         {
             return await _context.MenuItems.ToListAsync();
         }
 
-        // GET: api/MenuItems/{id}
-        public async Task<ActionResult<MenuItem>> GetMenuItem(int id)
+        // Get a single MenuItem by ID
+        public async Task<MenuItem?> GetMenuItemById(int id)
         {
             var menuItem = await _context.MenuItems.FindAsync(id);
-
-            if (menuItem == null)
-            {
-                return new NotFoundResult(); // Return 404 if not found
-            }
-
-            return menuItem; // Return the found menu item
+            return menuItem;
         }
 
-        // PUT: api/MenuItems/{id}
-        public async Task<IActionResult> PutMenuItem(int id, MenuItem menuItem)
+        // Add a new MenuItem
+        public async Task AddMenuItem(MenuItem menuItem)
         {
-            if (id != menuItem.MenuItemId)
-            {
-                return new BadRequestResult(); // Return 400 for bad request
-            }
+            _context.MenuItems.Add(menuItem);
+            await _context.SaveChangesAsync();
+        }
 
+        // Update an existing MenuItem
+        public async Task<bool> UpdateMenuItem(MenuItem menuItem)
+        {
             _context.Entry(menuItem).State = EntityState.Modified;
 
             try
             {
                 await _context.SaveChangesAsync();
+                return true; // Return true if update is successful
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MenuItemExists(id))
-                {
-                    return new NotFoundResult(); // Return 404 if item does not exist
-                }
-                throw; // Rethrow if there's another issue
+                return false; // Return false if there's an error
             }
-
-            return new NoContentResult(); // Return 204 No Content on success
         }
 
-        // POST: api/MenuItems
-        public async Task<ActionResult<MenuItem>> PostMenuItem(MenuItem menuItem)
-        {
-            _context.MenuItems.Add(menuItem);
-            await _context.SaveChangesAsync();
-
-            return new CreatedAtActionResult(nameof(GetMenuItem), "MenuItems", new { id = menuItem.MenuItemId }, menuItem);
-        }
-
-        // DELETE: api/MenuItems/{id}
-        public async Task<IActionResult> DeleteMenuItem(int id)
+        // Delete a MenuItem by ID
+        public async Task<bool> DeleteMenuItem(int id)
         {
             var menuItem = await _context.MenuItems.FindAsync(id);
             if (menuItem == null)
             {
-                return new NotFoundResult(); // Return 404 if item not found
+                return false; // Return false if item not found
             }
 
             _context.MenuItems.Remove(menuItem);
             await _context.SaveChangesAsync();
-
-            return new NoContentResult(); // Return 204 No Content on success
+            return true; // Return true if deletion is successful
         }
 
-        private bool MenuItemExists(int id)
+        // Get a list of FoodTruck for dropdown
+        public async Task<IEnumerable<SelectListItem>> GetFoodTruckSelectList()
         {
-            return _context.MenuItems.Any(e => e.MenuItemId == id);
+            var foodTrucks = await _context.FoodTrucks.ToListAsync();
+            return foodTrucks.Select(ft => new SelectListItem
+            {
+                Value = ft.FoodTruckId.ToString(), // Assuming FoodTruckId is of type int
+                Text = ft.Name // Assuming there's a 'Name' property in FoodTruck for display
+            });
         }
     }
 }

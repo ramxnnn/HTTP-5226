@@ -5,13 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FoodTruckTracker.Data;
 using LocalFoodTruckTrackerSystem.Models;
-using FoodTruckTracker.Controllers.Interfaces; 
+using FoodTruckTracker.Controllers.Interfaces;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace FoodTruckTracker.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MenuItemsApiController : ControllerBase, IMenuItemsService 
+    public class MenuItemsApiController : ControllerBase, IMenuItemsService
     {
         private readonly ApplicationDbContext _context;
 
@@ -100,6 +101,36 @@ namespace FoodTruckTracker.Controllers
         private bool MenuItemExists(int id)
         {
             return _context.MenuItems.Any(e => e.MenuItemId == id);
+        }
+
+        Task<IEnumerable<MenuItem>> IMenuItemsService.GetMenuItems()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MenuItem?> GetMenuItemById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> UpdateMenuItem(MenuItem menuItem)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task AddMenuItem(MenuItem menuItem)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<bool> IMenuItemsService.DeleteMenuItem(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<SelectListItem>> GetFoodTruckSelectList()
+        {
+            throw new NotImplementedException();
         }
     }
 }

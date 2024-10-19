@@ -62,7 +62,7 @@ namespace FoodTruckTracker.Services
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task<Location> GetLocationById(int locationId)
+        public async Task<Location?> GetLocationById(int locationId)
         {
             return await _context.Locations.FindAsync(locationId);
         }
